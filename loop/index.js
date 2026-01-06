@@ -1,4 +1,4 @@
-console.log("loop")
+console.log("loop");
 
 /* for loop 
 let a = 1;
@@ -6,7 +6,6 @@ for (let i = 0; i < 10; i++) {
     console.log(a + i);
 }    
 */
-
 
 /* for in loop  
 let object = {
@@ -61,12 +60,10 @@ for (const key in object) {
 }
 */
 
-
+/*
 console.log("forof loop in array")
 
-let arr = [1, 2, 4, 6] 
-
-for (const element of arr) {
-    
+let arr = [1, 2, 4, 6]  
+for (const element of arr) { 
     console.log(  element) 
-}
+}*/

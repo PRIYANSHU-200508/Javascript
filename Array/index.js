@@ -43,7 +43,7 @@ console.log(arr.reverse())
 // }
 // console.log(newArr)
 
-
+/*
 let arr = [1, 2, 4, 6] ;
 let newArr = arr.map(e =>{
  return e*e
@@ -57,5 +57,7 @@ function New(e){
     return false
 }
 console.log(newArr.filter(New))
- 
+ */
+
+
 
