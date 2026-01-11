@@ -14,7 +14,6 @@ const loadScript = (src, callback) => {
   let sc = document.createElement("script");
   sc.src = src;
 
-  // call callback AFTER script is loaded
   sc.onload = () => {
     callback("harry");
   };
@@ -22,7 +21,6 @@ const loadScript = (src, callback) => {
   document.head.append(sc);
 };
 
-// example script URL
 loadScript(
   "https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js",
   callback

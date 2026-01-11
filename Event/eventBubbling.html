@@ -34,19 +34,28 @@
     <script>
       document.querySelector(".child").addEventListener("click", (e) => {
         alert("clicked on child");
-e.stopPropagation()
+        e.stopPropagation();
       });
 
       document.querySelector(".container").addEventListener("click", (e) => {
         alert("clicked on container");
-        e.stopPropagation()
+        e.stopPropagation();
       });
       document
         .querySelector(".childcontainer")
         .addEventListener("click", (e) => {
           alert("clicked on childcontainer");
-          e.stopPropagation()
+          e.stopPropagation();
         });
+
+      // setInterval(() => {
+      //   document.querySelector(".child").style.background = " green"
+      // }, 2000);
+
+      // setTimeout(() => {
+      //   document.querySelector(".child").style.background = " green";
+      // }, 2000);
+         
     </script>
   </body>
 </html>
