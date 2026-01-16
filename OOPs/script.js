@@ -7,7 +7,8 @@ let obj = {
 console.log(obj);
 
 class Animal {
-  constructor() {
+  constructor(name) {
+    this.name = name;
     console.log("Object is created..");
   }
   eat() {
@@ -17,5 +18,20 @@ class Animal {
     console.log("animla live");
   }
 }
-let  a = new Animal();
-console.log(a)
+
+class newanimal extends Animal {
+  constructor(name) {
+    super(name);
+    this.name = name;
+    console.log("hi i'm new class");
+  }
+  eat() {
+    console.log("i'm also eats"); //overridden
+    super.eat()
+  }
+}
+
+let a = new Animal("happy");
+console.log(a);
+let l = new newanimal("lion");
+console.log(l);
