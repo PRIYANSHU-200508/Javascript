@@ -35,3 +35,5 @@ let a = new Animal("happy");
 console.log(a);
 let l = new newanimal("lion");
 console.log(l);
+
+
