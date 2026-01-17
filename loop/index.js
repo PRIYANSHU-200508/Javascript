@@ -17,8 +17,9 @@ for (const key in object) {
     console.log(key, element) 
 } 
 */
-
-/* while loop
+ 
+ 
+/* wfhile loop
 let i  = 5;
 while (i<10) {
     console.log(i)

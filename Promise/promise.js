@@ -1,10 +1,10 @@
-// async function getdata() {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       resolve(455);
-//     }, 2000);
-//   });
-// }
+async function getdata() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(455);
+    }, 2000);
+  });
+}
 
 async function getdata() {
    let x = await fetch('https://jsonplaceholder.typicode.com/todos/1')
