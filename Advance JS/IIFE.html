@@ -1,44 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-//iife
-        async function sleep() {
-            return new Promise((resolve, reject) =>{
-                setTimeout(() => {
-                    resolve(45)
-                }, 1000);
-  
-        })
-          }
- 
-        (async function main() {
-            
-          let a = await sleep()
-          console.log(a)
-          let b = await sleep()
-          console.log(b)
-       })()
 
-//destructing
+        /*
+      //iife
+      async function sleep() {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve(45);
+          }, 1000);
+        });
+      }
 
- let [x, y, ...rest] = [1, 5, 9, 6, 90]
-        console.log(x, y, ...rest)
+      (async function main() {
+        let a = await sleep();
+        console.log(a);
+        let b = await sleep();
+        console.log(b);
+      })();
 
-let obj = {
-    a : 1,
-    b:4,
-    c: 3
-}
+      //destructing
 
-let {a,b} = obj
-console.log(a, b)
+      let [x, y, ...rest] = [1, 5, 9, 6, 90];
+      console.log(x, y, ...rest);
 
+      let obj = {
+        a: 1,
+        b: 4,
+        c: 3,
+      };
+
+      let { a, b } = obj;
+      console.log(a, b);
+
+      */
+
+      // spread syntax
+
+      function sum(a, b, c){
+          return a+b+c;
+      }
+
+      let arr = [1, 4, 6]
+      console.log(arr[0]+arr[1]+arr[2])
+
+      console.log(sum(5,6,6))
+      console.log(sum(...arr))
     </script>
-</body>
+  </body>
 </html>
