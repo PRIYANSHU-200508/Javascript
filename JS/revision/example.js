@@ -49,7 +49,7 @@ async function getUserData(userId) {
 
     return user;
 
-  } catch (error) {
+  } catch (error) { 
     console.error("Error:", error.message);
 
     return {
