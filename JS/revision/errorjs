@@ -45,9 +45,9 @@ console.log(divide(10, 0));
 
 
 
-const age = tgyhuj; // age is not defined
+const age1 = tgyhuj; // age is not defined
 try {
-  if (age < 18) {
+  if (age1 < 18) {
     throw new Error("You must be 18 or older");
   } 
   console.log("Access Granted");
